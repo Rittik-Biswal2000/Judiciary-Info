@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+</head>
+<body>
+    <h1>Login Successful</h1>
+    <button id="check_user">Check User</button>
+    <button id="file_case">File Case</button>
+    <button id="logout">LOGOUT</button>
+</body>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyCI1N1SAePE7BZALrJM6Hwh0_tAJYHx4ik",
+    authDomain: "jims-a9ce1.firebaseapp.com",
+    projectId: "jims-a9ce1",
+    storageBucket: "jims-a9ce1.appspot.com",
+    messagingSenderId: "5919209944",
+    appId: "1:5919209944:web:00a2bb8b1685434fae9aad",
+    measurementId: "G-50L8RP29E6"
+};
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db=firebase.database();
+      const auth=firebase.auth();
+
+</script>
+<script src="login_next.js"></script>
+</html>

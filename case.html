@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V17</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaQS4QHtRR_O1wHRqPrjX8q6UfgA9cteQ&callback=initMap&libraries=&v=weekly"
+      defer
+	></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+	<style type="text/css">
+		/* Set the size of the div element that contains the map */
+		#map {
+		  height: 400px;
+		  /* The height is 400 pixels */
+		  width: 100%;
+		  /* The width is the width of the web page */
+		}
+	  </style>
+	     <!-- <script>
+			// Initialize and add the map
+			function initMap() {
+		const myLatlng = { lat: -25.363, lng: 131.044 };
+		const map = new google.maps.Map(document.getElementById("map"), {
+		  zoom: 4,
+		  center: myLatlng,
+		});
+		// Create the initial InfoWindow.
+		let infoWindow = new google.maps.InfoWindow({
+		  content: "Click the map to get Lat/Lng!",
+		  position: myLatlng,
+		});
+		infoWindow.open(map);
+		// Configure the click listener.
+		map.addListener("click", (mapsMouseEvent) => {
+			//let loc=(JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2))
+			console.log(mapsMouseEvent.latLng.toJSON().lat)
+		  // Close the current InfoWindow.
+		  /*infoWindow.close();
+		  // Create a new InfoWindow.
+		  infoWindow = new google.maps.InfoWindow({
+			position: mapsMouseEvent.latLng,
+		  });
+		  infoWindow.setContent(
+			JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2)
+		  );*/
+		  //infoWindow.open(map);
+		});
+	  }
+	  
+		  </script>-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Complaint Details
+				</span>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input"  data-validate="Type first name">
+					<input class="input100"  id="first-name" type="text" name="first-name" placeholder="First name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input"  data-validate="Type last name">
+					<input class="input100" type="text"  id="last-name" name="last-name" placeholder="Last name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				
+				<div class="wrap-input100" data-validate = "Valid phone number is required: +91 9638527410">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Phone">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100"data-validate = "Valid Street adrress is required: E.g. M G Marg , infront of Gateway" >
+					<input id="location" class="input100" type="text" placeholder="Street - E.g. M G Marg , infront of Gateway">
+					<span class="focus-input100"></span>
+				</div>
+				
+				
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type City">
+					<input id="city" class="input100" type="text" name="city" placeholder="City">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Select valid state">
+					<select name="state" id="state" class="form-control">
+						<option value="state">Select State</option>
+						<option value="Andhra Pradesh">Andhra Pradesh</option>
+						<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+						<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+						<option value="Assam">Assam</option>
+						<option value="Bihar">Bihar</option>
+						<option value="Chandigarh">Chandigarh</option>
+						<option value="Chhattisgarh">Chhattisgarh</option>
+						<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+						<option value="Daman and Diu">Daman and Diu</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Lakshadweep">Lakshadweep</option>
+						<option value="Puducherry">Puducherry</option>
+						<option value="Goa">Goa</option>
+						<option value="Gujarat">Gujarat</option>
+						<option value="Haryana">Haryana</option>
+						<option value="Himachal Pradesh">Himachal Pradesh</option>
+						<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+						<option value="Jharkhand">Jharkhand</option>
+						<option value="Karnataka">Karnataka</option>
+						<option value="Kerala">Kerala</option>
+						<option value="Madhya Pradesh">Madhya Pradesh</option>
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="Manipur">Manipur</option>
+						<option value="Meghalaya">Meghalaya</option>
+						<option value="Mizoram">Mizoram</option>
+						<option value="Nagaland">Nagaland</option>
+						<option value="Odisha">Odisha</option>
+						<option value="Punjab">Punjab</option>
+						<option value="Rajasthan">Rajasthan</option>
+						<option value="Sikkim">Sikkim</option>
+						<option value="Tamil Nadu">Tamil Nadu</option>
+						<option value="Telangana">Telangana</option>
+						<option value="Tripura">Tripura</option>
+						<option value="Uttar Pradesh">Uttar Pradesh</option>
+						<option value="Uttarakhand">Uttarakhand</option>
+						<option value="West Bengal">West Bengal</option>
+						</select>
+						<span class="select-btn">
+							<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input">
+					<div id="map"></div>
+				</div>
+
+
+				
+				<div class="wrap-input100 validate-input" data-validate = "Details is required">
+					<textarea id="message" class="input100" name="message" placeholder="Give More details"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" id="submit">
+						Submit
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Helpline
+						</span>
+
+						<span class="txt3">
+							+1 800 1236879
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-envelope"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Support
+						</span>
+
+						<span class="txt3">
+							contact@example.com
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>-->
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<!--<script src="js/main.js"></script>-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>-->
+	<script>
+		var firebaseConfig = {
+		apiKey: "AIzaSyCI1N1SAePE7BZALrJM6Hwh0_tAJYHx4ik",
+		authDomain: "jims-a9ce1.firebaseapp.com",
+		projectId: "jims-a9ce1",
+		storageBucket: "jims-a9ce1.appspot.com",
+		messagingSenderId: "5919209944",
+		appId: "1:5919209944:web:00a2bb8b1685434fae9aad",
+		measurementId: "G-50L8RP29E6"
+	};
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		  const db=firebase.database();
+		  const auth=firebase.auth();
+	
+	</script>
+	<script src="case.js"></script>
+</body>
+</html>
