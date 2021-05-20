@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Wanted List</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <style>
+        #pageloader {
+            position: absolute;
+            top: 0;
+            bottom: 0%;
+            left: 0;
+            right: 0%;
+            background-color: #14131391;
+            z-index: 99;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            /* Light grey */
+            border-top: 16px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pageloader">
+        <div class="loader"></div>
+    </div>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Wanted List</a>
+        </div>
+    </nav>
+
+    <!-- As a heading -->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+        <div class="jumbotron">
+            <div class="input-group flex-nowrap">
+                <p>
+                    <input type="text" id="Name" class="form-control" placeholder="Name" aria-label="Username"
+                        aria-describedby="addon-wrapping"><br>
+                    <input type="text" id="Age" class="form-control" placeholder="Age" aria-label="Username"
+                        aria-describedby="addon-wrapping"><br>
+                    <input type="text" id="Gender" class="form-control" placeholder="Gender" aria-label="Username"
+                        aria-describedby="addon-wrapping"><br>
+                    <!-- <input type="text" id="MissingFrom" class="form-control" placeholder="Missing From"
+                        aria-label="Username" aria-describedby="addon-wrapping"><br> -->
+                    <input type="text" id="MissingSince" class="form-control" placeholder="Status"
+                        aria-label="Username" aria-describedby="addon-wrapping"><br>
+                    <button type="button" id="btn_missing" class="btn btn-primary">Add Wanted</button>
+
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCI1N1SAePE7BZALrJM6Hwh0_tAJYHx4ik",
+        authDomain: "jims-a9ce1.firebaseapp.com",
+        projectId: "jims-a9ce1",
+        storageBucket: "jims-a9ce1.appspot.com",
+        messagingSenderId: "5919209944",
+        appId: "1:5919209944:web:00a2bb8b1685434fae9aad",
+        measurementId: "G-50L8RP29E6"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.database();
+    const auth = firebase.auth();
+
+</script>
+<script src="update_wanted_list.js"></script>
+
+</html>

@@ -1,18 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIMS</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Judiciary Information Management System</title>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('img/JIMimg2.jpg');
+    opacity: 20;
+    height: 100%;
+   /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        /*display: block;*/
+        width: 36%;
+        margin: 29px auto;
+        display: block;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color:black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto 
+       
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align:center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    h2{
+        text-align: center;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+    .container h2 {
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
 <body>
-    <form action="login.html">
-        <input type="submit" value="Login" />
-    </form>
-    
-    <form action="user.html">
-        <input type="submit" value="SignUp" />
-    </form>
-    
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/Judiciary Logo.jpg" alt="">
+            <div>JIMS</div>
+        </div>
+
+        <div class="right">
+            <button class="btn" onclick="location.href='login.html'" type="button">
+                Login</button>
+                <button class="btn" onclick="location.href='user.html'" type="button">
+                    SignUp</button>
+        </div>
+    </header>
+    <h2 >Raise your voice against injustice!!</h2>
+    <div class="container">
+        <h1>Judiciary Information Management System</h1>
+        <h2>Justice Delayed Is Justice Denied</h2>
+        <button class="btn" onclick="missing()">Missing List</button>
+        <button class="btn" onclick="wanted()">Wanted List</button>
+        <!-- <div class="right">
+            <button class="btn" onclick="location.href='/login.html'" type="button">
+                Missing List</button>
+                <button class="btn" onclick="location.href='/user.html'" type="button">
+                    Wanted List</button> -->
+        </div>
+    </div>
+  
+
+
 </body>
+<script>
+    function missing() {
+      window.location.href="missing.html";
+    }
+    function wanted() {
+      window.location.href="wanted.html";
+    }
+  </script>
+
 </html>

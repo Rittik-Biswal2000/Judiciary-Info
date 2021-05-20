@@ -11,7 +11,7 @@ const long_cord=longitude;
 const case_details=document.querySelector("#message").value;*/
 function initMap() {
     console.log("in case.js")
-    const myLatlng = { lat: -25.363, lng: 131.044 };
+    const myLatlng = { lat: 21.4888, lng: 83.8844 };
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 4,
       center: myLatlng,
@@ -53,10 +53,22 @@ function initMap() {
     const case_details=document.querySelector("#message").value;
       e.preventDefault()
       async function writeindb(){
+        showLoading();
         console.log("Set 1")
         var timeInMs = Date.now();
         console.log(timeInMs)
-        await firebase.database().ref('Case/' +state+"/"+city+"/Complaitant Details/"+timeInMs).set({
+        await firebase.database().ref('users/' + auth.currentUser.uid+"/Case/"+timeInMs).set({
+          Case_ID:timeInMs
+
+
+
+
+        
+
+
+      });
+        await firebase.database().ref('Case/'+timeInMs).set({
+
             Id:auth.currentUser.uid,
             Name:name,
             Email:email,
@@ -66,16 +78,26 @@ function initMap() {
             State:state,
             Latitude:lat_cord,
             Longitude:long_cord,
-            Case_details:case_details
+            Case_details:case_details,
+            Status:"Pending"
 
 
 
             
 
 
-          })
-          await firebase.database().ref('users/' + auth.currentUser.uid+"/Cases/"+state+"/"+city+"/"+timeInMs).set({
-              Case_ID:timeInMs
+          });
+          await firebase.database().ref(state+"/"+city+"/"+'Cases/'+timeInMs).set({
+           Case_ID:timeInMs
+ 
+           }).then((error) => {
+            stopLoading()
+            alert("Case Registered Successfully "+ timeInMs)
+            window.location.href="login_next.html"
+            
+        })
+          // await firebase.database().ref('users/' + auth.currentUser.uid+"/Cases/"+timeInMs).set({
+          //     Case_ID:timeInMs
 
 
 
@@ -83,7 +105,7 @@ function initMap() {
             
 
 
-          })
+          // })
 
           /*
          
@@ -96,4 +118,14 @@ function initMap() {
     writeindb()
 
   })
+  const showLoading = () => {
+    console.log("Loading Start")
+    document.getElementById("pageloader").style.display="flex"
+}
+
+const stopLoading = () => {
+    console.log("Loading Stop")
+    document.getElementById("pageloader").style.display="None"
+    //alert("Data Added Successfully")
+}
   

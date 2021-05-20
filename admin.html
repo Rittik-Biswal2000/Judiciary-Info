@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Form-v10 by Colorlib</title>
+	<title>Admin Signup</title>
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Font-->
@@ -11,16 +11,15 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
-	
 </head>
 <body class="form-v10">
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="#">JIMS</a>
+		  <a class="navbar-brand" href="index.html">JIMS</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -137,9 +136,9 @@
 					</div>
 
 					<div class="form-checkbox">
-						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
-						  	<input type="checkbox" name="checkbox">
-						  	<span class="checkmark"></span>
+						<label class="container"><p>Already have an Account ? <a href="admin_login.html" class="text">Login</a> here.</p>
+						  	<!-- <input type="checkbox" name="checkbox"> -->
+						  	<!-- <span class="checkmark"></span> -->
 						</label>
 					</div>
 					<div class="form-row-last">
@@ -161,7 +160,7 @@
   };
               firebase.initializeApp(firebaseConfig);
               firebase.analytics();
-              const db=firebase.firestore();
+              const db=firebase.database();
               const auth=firebase.auth();
 
         </script>

@@ -33,17 +33,17 @@
 
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="index.html">JIMS</a>
+		  <a class="navbar-brand" href="#">JIMS</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-			  <a class="nav-link active" aria-current="page" href="login.html">General Public</a>
+			  <a class="nav-link" href="login.html">General Public</a>
 			  <a class="nav-link" href="police_login.html">Police</a>
-			  <a class="nav-link" href="admin_login.html">Admin</a>
+			  <a class="nav-link active" aria-current="page" href="admin_login.html">Admin</a>
 			</div>
 		  </div>
 		</div>
@@ -51,7 +51,7 @@
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/login_bg_01.jpg');">
-			<div class="wrap-login100" >
+			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
@@ -60,8 +60,8 @@
 						JIMS
 					</span>
 
-					<span class="login100-form-title p-b-34 p-t-27" >
-						Log in | General Public
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in | Admin
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
@@ -134,9 +134,8 @@
       firebase.analytics();
       const db=firebase.firestore();
       const auth=firebase.auth();
-
 </script>
-	<script src="login.js"></script>
+	<script src="admin_login.js"></script>
 
 </body>
 </html>

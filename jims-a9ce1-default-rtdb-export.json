@@ -1,0 +1,492 @@
+{
+  "Case" : {
+    "1617207669921" : {
+      "Case_details" : "Tax Dispute",
+      "City" : "Bhubaneswar",
+      "Email" : "b@gmail.com",
+      "Id" : "baWWzcUqVZgryrrVDXzsfbIt6O13",
+      "Latitude" : -28.52254717428286,
+      "Longitude" : 127.55767008686067,
+      "Name" : "PK Singh",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "rgef"
+    },
+    "1617207954018" : {
+      "Case_details" : "Shoplifting",
+      "City" : "Bhubaneswar",
+      "Email" : "b@gmail.com",
+      "Id" : "baWWzcUqVZgryrrVDXzsfbIt6O13",
+      "Latitude" : -28.187383049666035,
+      "Longitude" : 122.89946696186067,
+      "Name" : "PK Singh",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "rgef"
+    },
+    "1617212505470" : {
+      "Case_details" : "Jewellery Snatching",
+      "City" : "Bhubaneswar",
+      "Email" : "rittikbiswal2000@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : -29.394086964575397,
+      "Longitude" : 123.42681071186067,
+      "Name" : "Rittik Biswal",
+      "Phone" : "06370852688",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "Saheed Nagar PS"
+    },
+    "1617212514046" : {
+      "Case_details" : "stolen",
+      "City" : "Bhubaneswar",
+      "Email" : "rittikbiswal2000@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : -29.394086964575397,
+      "Longitude" : 123.42681071186067,
+      "Name" : "Rittik Biswal",
+      "Phone" : "06370852688",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "Saheed Nagar PS"
+    },
+    "1617249184192" : {
+      "Case_details" : "stolen car",
+      "City" : "Bhubaneswar",
+      "Email" : "rittik2000@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : -27.877065256196055,
+      "Longitude" : 130.45806071186067,
+      "Name" : "gh cgh",
+      "Phone" : "1234567890",
+      "State" : "Odisha",
+      "Status" : "fggfdsfg",
+      "Street" : "Bhubaneswar"
+    },
+    "1617249248184" : {
+      "Case_details" : "stolen bike",
+      "City" : "Bhubaneswar",
+      "Email" : "rittik2000@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : -28.032336010578284,
+      "Longitude" : 147.06938883686067,
+      "Name" : "gh cgh",
+      "Phone" : "1234567890",
+      "State" : "Odisha",
+      "Status" : "Case Closed",
+      "Street" : "Bhubaneswar"
+    },
+    "1617473456328" : {
+      "Case_details" : "Bomb blast",
+      "City" : "Bhubaneswar",
+      "Email" : "boma@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : 20.41383888015725,
+      "Longitude" : 85.8612880701954,
+      "Name" : "Arnab  Panda",
+      "Phone" : "1234567890",
+      "State" : "Odisha",
+      "Street" : "B403 Pulha"
+    },
+    "1617473803069" : {
+      "Case_details" : "dfghjkjhg",
+      "City" : "Bhubaneswar",
+      "Email" : "dfghjkh@er.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : 18.682621781559487,
+      "Longitude" : 82.97619598093031,
+      "Name" : "dfhkgvb jfkmjh",
+      "Phone" : "dfghjk",
+      "State" : "Odisha",
+      "Street" : "dsfg"
+    },
+    "1617474351493" : {
+      "Case_details" : "xcfgnb",
+      "City" : "Bhubaneswar",
+      "Email" : "dfghjkh@er.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : 20.668713132029453,
+      "Longitude" : 86.22814910593031,
+      "Name" : "cdvfbg dfgh",
+      "Phone" : "sdgfhjhg",
+      "State" : "Odisha",
+      "Street" : "fdfhgjhgff"
+    },
+    "1617506790960" : {
+      "Case_details" : "gjhkadsl",
+      "City" : "Bhubaneswar",
+      "Email" : "b@gmail.com",
+      "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3",
+      "Latitude" : 20.723526123771332,
+      "Longitude" : 83.21057008686064,
+      "Name" : "PK esrdf",
+      "Phone" : "1234567890",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "sdfghjk"
+    },
+    "1617552761560" : {
+      "Case_details" : "Laptop Theft",
+      "City" : "Burla",
+      "Email" : "parthapattanayak099@gmail.com",
+      "Id" : "fJtD2Sg6kfPfoI3F5u07ye2cUkU2",
+      "Latitude" : 20.25699104901686,
+      "Longitude" : 83.38635133686064,
+      "Name" : "Partha P",
+      "Phone" : "1234567890",
+      "State" : "Odisha",
+      "Status" : "Fir Registered",
+      "Street" : "NA"
+    },
+    "1617554330382" : {
+      "Case_details" : "stolen bike",
+      "City" : "balasore",
+      "Email" : "parthapattnayak099@gmail.com",
+      "Id" : "2U5cTL8iKigz8kSNaqEN9svfjRX2",
+      "Latitude" : 21.36649249158796,
+      "Longitude" : 86.86073777785381,
+      "Name" : "PARTHA PATTNAYAK",
+      "Phone" : "9861423364",
+      "State" : "Odisha",
+      "Status" : "Pending",
+      "Street" : "balasore"
+    }
+  },
+  "Missing_List" : {
+    "0" : {
+      "Age" : 54,
+      "Gender" : "Male",
+      "Missing From" : "Sambalpur",
+      "Missing Since" : "02/12/2005",
+      "Name" : "Rahul"
+    },
+    "1" : {
+      "Age" : 45,
+      "Gender" : "Male",
+      "Missing From" : "BATHU BASTI",
+      "Missing Since" : "02/11/2007",
+      "Name" : "JEEVAN LALL BABU"
+    },
+    "2" : {
+      "Age" : 37,
+      "Gender" : "Female",
+      "Missing From" : "ST.MARRY'S SCHOOL PARKING PLACE",
+      "Missing Since" : "08/07/2009",
+      "Name" : "GEETA VELLAN"
+    },
+    "3" : {
+      "Age" : 20,
+      "Gender" : "Female",
+      "Missing From" : "Khordha",
+      "Missing Since" : "13/04/2010",
+      "Name" : "RAJESHWARI"
+    },
+    "-MXN_o6atUnaPCgVxo-g" : {
+      "Age" : "12",
+      "Gender" : "m",
+      "Missing From" : "445",
+      "Missing Since" : "vghb",
+      "Name" : "Ri"
+    },
+    "-MXNcBKIiSgSH7GFeRyL" : {
+      "Age" : "fff",
+      "Gender" : "ffvf",
+      "Missing From" : "dfff",
+      "Missing Since" : "vffvvf",
+      "Name" : "dvd"
+    },
+    "-MXNdjnPNcJyNXd9czUo" : {
+      "Age" : "21",
+      "Gender" : "M",
+      "Missing From" : "bn",
+      "Missing Since" : "gkhj",
+      "Name" : "PK Singh"
+    },
+    "-MXNds7AyyEHYWK0kiVR" : {
+      "Age" : "hjk",
+      "Gender" : "hbjk",
+      "Missing From" : "jhbk",
+      "Missing Since" : "hjk",
+      "Name" : "hb"
+    },
+    "-MXO76aP-5uflO-k1kLy" : {
+      "Age" : "dfdffb",
+      "Gender" : "dsfghgfdf",
+      "Missing From" : "sfdghfgd",
+      "Missing Since" : "dfgf",
+      "Name" : "vbvc"
+    },
+    "-MXPvJQoiTaNK1PTm3js" : {
+      "Age" : "15",
+      "Gender" : "M",
+      "Missing From" : "Jsg",
+      "Missing Since" : "21/06/2020",
+      "Name" : "Ak"
+    }
+  },
+  "Odisha" : {
+    "Bhubaneswar" : {
+      "Cases" : {
+        "1617249184192" : {
+          "Case_ID" : 1617249184192
+        },
+        "1617249248184" : {
+          "Case_ID" : 1617249248184
+        },
+        "1617473456328" : {
+          "Case_ID" : 1617473456328
+        },
+        "1617473803069" : {
+          "Case_ID" : 1617473803069
+        },
+        "1617474351493" : {
+          "Case_ID" : 1617474351493
+        },
+        "1617506790960" : {
+          "Case_ID" : 1617506790960
+        }
+      },
+      "admin" : {
+        "Id" : "OsZRiGD8FwgorrqUA8ehotxc7BY2"
+      },
+      "police" : {
+        "Id" : "uJF2sn0iP7hHnxnHJWFfA1MLcKc2"
+      },
+      "users" : {
+        "Id" : "baWWzcUqVZgryrrVDXzsfbIt6O13"
+      }
+    },
+    "Burla" : {
+      "Cases" : {
+        "1617552761560" : {
+          "Case_ID" : 1617552761560
+        }
+      },
+      "police" : {
+        "Id" : "ZWroFDqbWIaXrCdEdAq3dPN0geb2"
+      },
+      "users" : {
+        "Id" : "fJtD2Sg6kfPfoI3F5u07ye2cUkU2"
+      }
+    },
+    "Cuttack" : {
+      "users" : {
+        "Id" : "KFn1wxGQjNaFeMKRVodMNALqrFB3"
+      }
+    },
+    "balasore" : {
+      "Cases" : {
+        "1617554330382" : {
+          "Case_ID" : 1617554330382
+        }
+      },
+      "users" : {
+        "Id" : "2U5cTL8iKigz8kSNaqEN9svfjRX2"
+      }
+    }
+  },
+  "Wanted_List" : {
+    "0" : {
+      "Age" : 26,
+      "Gender" : "Female",
+      "Name" : "Shradul",
+      "Status" : "Absconding"
+    },
+    "1" : {
+      "Age" : 30,
+      "Gender" : "Male",
+      "Name" : "Shri. Vicky Dey",
+      "Status" : "Absconding"
+    },
+    "2" : {
+      "Age" : 35,
+      "Gender" : "Male",
+      "Name" : "Mahesh",
+      "Status" : "Absconding"
+    },
+    "3" : {
+      "Age" : 38,
+      "Gender" : "Female",
+      "Name" : "Sundari",
+      "Status" : "Absconding"
+    },
+    "-MXO9HwIewt2Cb5km8Uh" : {
+      "Age" : "svfs",
+      "Gender" : "dsd",
+      "Name" : "dfsdv",
+      "Status" : "dfsd"
+    },
+    "-MXPvB9FbeaQDUnvWoPn" : {
+      "Age" : "25",
+      "Gender" : "M",
+      "Name" : "rt",
+      "Status" : "Absconding"
+    },
+    "-MXSf1LLAJh8DBO73VnZ" : {
+      "Age" : "25",
+      "Gender" : "M",
+      "Name" : "R P",
+      "Status" : "Absconding"
+    }
+  },
+  "admin" : {
+    "OsZRiGD8FwgorrqUA8ehotxc7BY2" : {
+      "Address" : "NA NA",
+      "City" : "Bhubaneswar",
+      "Email" : "admin6@gmail.com",
+      "Name" : "Admin P",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Zip" : "751001"
+    },
+    "ZAUd5PicqTdcBdLhmIvt12OsPsl1" : {
+      "Address" : "fgbdv gfv",
+      "City" : "Bhubaneswar",
+      "Email" : "admin5@gmail.com",
+      "Name" : "Admin Admin",
+      "Phone" : "06370852688",
+      "State" : "Odisha",
+      "Zip" : "751002"
+    }
+  },
+  "police" : {
+    "ZWroFDqbWIaXrCdEdAq3dPN0geb2" : {
+      "Address" : "NA NA",
+      "City" : "Burla",
+      "Email" : "burlapolice@gmail.com",
+      "Name" : "Burla Police",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Zip" : "768018"
+    },
+    "uJF2sn0iP7hHnxnHJWFfA1MLcKc2" : {
+      "Address" : "Airport Rd Tomando",
+      "City" : "Bhubaneswar",
+      "Email" : "bbspolice@gmail.com",
+      "Name" : "Central Police Station",
+      "Phone" : "789456230",
+      "State" : "Odisha",
+      "Zip" : "751006"
+    }
+  },
+  "users" : {
+    "2U5cTL8iKigz8kSNaqEN9svfjRX2" : {
+      "Address" : "na na",
+      "Case" : {
+        "1617554330382" : {
+          "Case_ID" : 1617554330382
+        }
+      },
+      "City" : "balasore",
+      "Email" : "parthapattnayak099@gmail.com",
+      "Name" : "Partha Pattnayak",
+      "Phone" : "9861423364",
+      "State" : "Odisha",
+      "Zip" : "756001"
+    },
+    "EiOK30w9TVM2SurZZGeGEvKWxTv2" : {
+      "Address" : "hgfd dsfghjk",
+      "Cases" : {
+        "Odisha" : {
+          "Bhubaneswar" : {
+            "1617203721241" : {
+              "Case_ID" : 1617203721241
+            },
+            "1617203894160" : {
+              "Case_ID" : 1617203894160
+            },
+            "1617204041345" : {
+              "Case_ID" : 1617204041345
+            },
+            "1617204120431" : {
+              "Case_ID" : 1617204120431
+            },
+            "1617204356752" : {
+              "Case_ID" : 1617204356752
+            }
+          }
+        }
+      },
+      "City" : "Bhubaneswar",
+      "Email" : "pk@gmail.com",
+      "Name" : "S B",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Zip" : "752101"
+    },
+    "KFn1wxGQjNaFeMKRVodMNALqrFB3" : {
+      "Address" : "fdgb gnhg",
+      "Case" : {
+        "1617212505470" : {
+          "Case_ID" : 1617212505470
+        },
+        "1617212514046" : {
+          "Case_ID" : 1617212514046
+        },
+        "1617249184192" : {
+          "Case_ID" : 1617249184192
+        },
+        "1617249248184" : {
+          "Case_ID" : 1617249248184
+        },
+        "1617287179351" : {
+          "Case_ID" : 1617287179351
+        },
+        "1617473456328" : {
+          "Case_ID" : 1617473456328
+        },
+        "1617473803069" : {
+          "Case_ID" : 1617473803069
+        },
+        "1617474351493" : {
+          "Case_ID" : 1617474351493
+        },
+        "1617506790960" : {
+          "Case_ID" : 1617506790960
+        }
+      },
+      "City" : "Cuttack",
+      "Email" : "rittik2000@gmail.com",
+      "Name" : "Rittik Biswal",
+      "Phone" : "06370852688",
+      "State" : "Odisha",
+      "Zip" : "751002"
+    },
+    "baWWzcUqVZgryrrVDXzsfbIt6O13" : {
+      "Address" : "rgef gef",
+      "Case" : {
+        "1617207669921" : {
+          "Case_ID" : 1617207669921
+        },
+        "1617207754049" : {
+          "Case_ID" : 1617207754049
+        },
+        "1617207954018" : {
+          "Case_ID" : 1617207954018
+        }
+      },
+      "City" : "Bhubaneswar",
+      "Email" : "b@gmail.com",
+      "Name" : "PK  Singh",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Zip" : "751002"
+    },
+    "fJtD2Sg6kfPfoI3F5u07ye2cUkU2" : {
+      "Address" : "NA NA",
+      "Case" : {
+        "1617552761560" : {
+          "Case_ID" : 1617552761560
+        }
+      },
+      "City" : "Burla",
+      "Email" : "parthapattanayak099@gmail.com",
+      "Name" : "Partha  P",
+      "Phone" : "7894561230",
+      "State" : "Odisha",
+      "Zip" : "768018"
+    }
+  }
+}

@@ -1,5 +1,8 @@
+let currentuser=null
 document.querySelector(".register").addEventListener('click',e=>{
+
     e.preventDefault()
+    
     const email=document.querySelector(".email").value;
     const password=document.querySelector(".Password").value;
     const fname=document.querySelector("#first_name").value;
@@ -20,21 +23,48 @@ document.querySelector(".register").addEventListener('click',e=>{
     console.log(zip)
     console.log(state)
     console.log(phone)
-    auth.createUserWithEmailAndPassword(email,password).then(()=>{
-        console.log("hi")
-        signupForm.reset() 
-     }).then(
-        db.collection('jims').doc('citizen').collection(city).doc(email).set({
-            Name : fname+" "+lname,
-            Address : Addr1+" "+addr2,
-            City : city,
-            Zip : zip,
-            State : state,
-            Phone : phone
-        }).catch(function(error){
-            console.error("Error adding : ",error);
-        })
-     ).catch(err=>{
-         console.log("bye")
-     })
+    async function writeindb(){
+        console.log("Set 1")
+        await firebase.database().ref('admin/' + currentuser.uid).set({
+            Name:fname+" "+lname,
+            Email:email,
+            Address:Addr1+" "+addr2,
+            City:city,
+            Zip:zip,
+            State:state,
+            Phone:phone
+            
+
+
+          })
+          await firebase.database().ref(state+"/"+city+"/"+'admin/').set({
+           Id:currentuser.uid
+
+          })
+          if(currentuser!=null)
+          {
+              window.location.replace("admin_next.html");
+          }
+    }
+    async function loginuser(){
+        await auth.createUserWithEmailAndPassword(email,password).then((user)=>{
+            console.log("auth")
+            //console.log(auth.currentUser.uid),
+            currentuser=auth.currentUser
+    
+            //val currentuser=auth.currentUser.uid
+            //signupForm.reset()
+            /*if(user!=null){
+                window.location.replace("login.html");
+            } */
+            if(currentuser!=null)
+            {
+                //window.location.replace("login_next.html");
+            }
+         })
+         console.log(currentuser.uid)
+         writeindb()
+
+    }
+    loginuser()
 })
